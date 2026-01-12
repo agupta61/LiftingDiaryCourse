@@ -104,7 +104,7 @@ export default async function DashboardPage({ searchParams }: PageProps) {
                             </TableCell>
                             <TableCell>
                               <div className="flex flex-wrap gap-1">
-                                {workout.exercises.map((exercise, index) => (
+                                {workout.exercises.map((exercise: string, index: number) => (
                                   <Badge key={index} variant="secondary" className="text-xs">
                                     {exercise}
                                   </Badge>
